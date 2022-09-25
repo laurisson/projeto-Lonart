@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro do Cliente</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://static.wixstatic.com/media/96eaf8_76f7b6f7f18a4baf8597ff005ffca454%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/96eaf8_76f7b6f7f18a4baf8597ff005ffca454%7Emv2.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    
+      <header>
+        <img class="logo" src="src/logo/logo1_webp.webp" alt="logo" />
+        <nav class="navecao">
+          <ul class="menu">
+            <li class="item">
+              <a href="http://127.0.0.1:5500/index.html#">Inicio</a>
+            </li>
+            
+            <li class="item"><a href="#"><input type="submit" id="sub" value="Produto"></a></li>
+            <ul class="produtoss">
+    
+              <li class="pro">Persianas</li>
+              <li class="pro">Cortinas</li>
+              <li class="pro">Acessórios</li>
+              <li class="pro">Motorizaçôes</li>
+            </ul>
+
+
+
+            <li class="item" onclick="alert('Pagina nao Finalizada')">
+              <a href="#">blog</a>
+            </li>
+            <li class="item"><a href="#">cadastro</a></li>
+            <li class="item">
+              <a href="#"><input type="submit" id="login" value="login"></a>
+            </li>
+          </ul>
+        </nav>
+       <div id="logi">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="imail">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="semha">
+       </div>
+      <main>
+        <div class="box">
+          <forrm action="">
+            <fieldset>
+              <legend><strong>Cadastro do Cliente</strong></legend>
+              <br />
+              <div class="inputBox">
+                <input type="text" name="name" class="inputuser" id="name" />
+                <label for="name" class="labelInput">Nome Completo:</label>
+              </div>
+              <br /><br />
+              <div class="inputBox">
+                <input type="email" name="email" class="inputuser" id="email" />
+                <label for="email" class="labelInput">Email:</label>
+              </div>
+              <br /><br />
+              <div class="inputBox">
+                <input
+                  type="tel"
+                  pattern="\d{2} \d{5}-\d{4}$"
+                  placeholder="(DDD) 95454-5452"
+                  name="telefone"
+                  class="inputuser"
+                  id="telefone"
+                />
+                <label for="telefone" class="labelInput">Telefone:</label>
+              </div>
+              <br /><br />
+              <div class="inputBox">
+                <input
+                  type="text"
+                  pattern="\d{3}.\d{3}.\d{3}-\d{2}$"
+                  name="cpf"
+                  class="inputuser"
+                  id="cpf"
+                />
+                <label for="cpf" class="labelInput">CPF:</label>
+              </div>
+              <br /><br />
+              <div class="inputBox">
+                <input
+                  type="password"
+                  name="password"
+                  class="inputuser"
+                  id="password"
+                  min="7"
+                  max="15"
+                />
+                <label for="password" class="labelInput">Senha:</label>
+              </div>
+              <br />
+              <br />
+              <div class="inputBox">
+                <input
+                  type="Password"
+                  name="confirmaPassword"
+                  class="inputuser"
+                  id="confirmaPassword"
+                />
+                <label for="confirmaPassword" class="labelInput"
+                  >Confirmar Senha:</label
+                >
+              </div>
+              <br />
+              <br />
+      
+              <br />
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                value="Enviar"
+                onclick="alert('Ainda nao Conectado a um Banco de Dados')"
+              />
+            </fieldset>
+          </forrm>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <h4>Redes Sociais</h4>
+          <ul class="sociais">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-whatsapp"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>copyright &copy;2022 laurisson.</p>
+        </div>
+      </footer>
+    
+    <script src="src/JS/scripts.js"></script>
+  </body>
+</html>
